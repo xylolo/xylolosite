@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f7d1ea;
+            margin: 50px;
+        }
+        
+        #container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        #yesBtn {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        #noBtn {
+            background-color: #f44336;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <IMG SRC="xd2.gif">.
+        <h1>Will You Be My Valentine?</h1>
+        <button id="yesBtn" onclick="showMessage('Yes')">Yes</button>
+        <button id="noBtn" onclick="confirmNo('No')">No</button>
+        <p id="response"></p>
+    </div>
+
+    <script>
+        function showMessage(answer) {
+            var responseElement = document.getElementById("response");
+            responseElement.innerHTML = "OMGOMGOMGOM U SAID " + answer + " I LOVE UUUUUUUU";
+        }
+        function confirmNo() {
+            var confirmNo = confirm("Are you sure?");
+            var responseElement = document.getElementById("response");
+
+            if (confirmNo) {
+                responseElement.innerHTML = "Im sad now cuz u said no :c";
+            } else {
+                responseElement.innerHTML = "Phew! I'm glad you reconsidered. I love you the most in the whole whole world."; 
+                
+            }
+        }
+    </script>
+</body>
+</html>
