@@ -19,7 +19,7 @@ const upload = multer({ storage: storage });
 
 // Serve the HTML form
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/test.html');
 });
 
 // Handle file upload
